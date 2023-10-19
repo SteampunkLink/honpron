@@ -1,3 +1,5 @@
+## Synopsis
+
 We're back, everyone. Welcome to season 2 of SNEScapades! Why season 2? Well, we're going to be making a few changes to the way this all works going forward and we felt like this was a good time to do a soft reboot. We're not starting over, we're still talking about games in November 93 and moving forward, but not every game is going to get the kind of treatment they usually got in the past.
 
 Don't worry, we explain it in the episode and it's really not a drastic change. We hope you like this new format.

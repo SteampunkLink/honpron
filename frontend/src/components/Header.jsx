@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <nav className="header">
       <div className="header-inner">
-        <div className="header_left">Honest Piranha</div>
+        <Link to="/">
+          <div className="header_left">Honest Piranha</div>
+        </Link>
         <div className="header_right">Home of the SNEScapades Podcast!</div>
       </div>
     </nav>

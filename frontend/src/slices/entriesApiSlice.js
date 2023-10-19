@@ -9,7 +9,13 @@ export const entriesApiSlice = apiSlice.injectEndpoints({
       }),
       keepUnusedDataFor: 5,
     }),
+    getOneEntry: builder.query({
+      query: (ep) => ({
+        url: `${ENTRIES_URL}/episode/${ep.show}/${ep.epNum}`,
+      }),
+      keepUnusedDataFor: 5,
+    }),
   }),
 });
 
-export const { useGetAllEntriesQuery } = entriesApiSlice;
+export const { useGetAllEntriesQuery, useGetOneEntryQuery } = entriesApiSlice;
