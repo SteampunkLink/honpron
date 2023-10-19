@@ -8,11 +8,11 @@ import {
 import PodcastDisplay from "./PodcastDisplay";
 import DateDisplay from "./DateDisplay";
 
-const EntryListItem = ({ entry }) => {
+const EntryListItem = ({ entry, full }) => {
   return (
-    <article className="entry-list-item display-box">
+    <article className="entry-list-item">
       <ul className="entry-list-item_head">
-        <li>SNEScapades</li>
+        <li>{entry.show.toUpperCase()}</li>
         <li>
           <FaPodcast />
         </li>
@@ -29,7 +29,7 @@ const EntryListItem = ({ entry }) => {
               <h3>Games Discused</h3>
               <ul>
                 {entry.games.map((g, idx) => (
-                  <li key={idx}>{g}</li>
+                  <li key={idx}>{g.title}</li>
                 ))}
               </ul>
             </>
@@ -41,7 +41,6 @@ const EntryListItem = ({ entry }) => {
           </a>
         </div>
       </div>
-      <div className="hp-btn single-link-btn">Read More</div>
       <div className="entry-list-item_footer">
         <span>
           <FaCalendar />
@@ -54,6 +53,10 @@ const EntryListItem = ({ entry }) => {
       </div>
     </article>
   );
+};
+
+EntryListItem.defaultProps = {
+  full: false,
 };
 
 export default EntryListItem;

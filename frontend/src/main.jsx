@@ -12,11 +12,13 @@ import store from "./store";
 import App from "./App.jsx";
 import "./index.scss";
 import HomeScreen from "./screens/HomeScreen";
+import EpisodeScreen from "./screens/EpisodeScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index={true} path="/" element={<HomeScreen />} />
+      <Route path="/episode/:show/:epNum" element={<EpisodeScreen />} />
     </Route>
   )
 );

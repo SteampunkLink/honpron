@@ -1,3 +1,5 @@
+## Synopsis
+
 Oh, why hello there. We've got another episode for you today. We're talking about Robocop vs. Terminator, Total Carnage, and Disney's Aladdin. What do they all have in common? Not really anything. I'm not sure why I asked.
 
 Robocop vs Terminator is the best SNES adaptation of either of those properties up to this point, but that's a low bar. Does that mean it's actually good, or simply not awful?

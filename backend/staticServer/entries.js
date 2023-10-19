@@ -20,7 +20,7 @@ const allEntries = {
     episodes: [
       {
         title: "Jurassic Park Edition",
-        episode: 1,
+        episode: 0,
         length: "1:18:38",
         published: new Date(2023, monthEnum.sep, 30),
         embedURL:
@@ -33,7 +33,7 @@ const allEntries = {
       },
       {
         title: "Aladdin Edition",
-        episode: 2,
+        episode: 1,
         length: "55:19",
         published: new Date(2023, monthEnum.oct, 12),
         embedURL:
@@ -46,7 +46,7 @@ const allEntries = {
       },
       {
         title: "Clay Fighter Edition",
-        episode: 3,
+        episode: 2,
         length: "",
         published: new Date(),
         embedURL: "",
