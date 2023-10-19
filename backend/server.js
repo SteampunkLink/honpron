@@ -2,7 +2,8 @@ import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 
-import staticRoutes from "./staticServer/routes.js";
+import entryRoutes from "./staticServer/entryRoutes.js";
+import rankRoutes from "./staticServer/rankRoutes.js";
 
 dotenv.config();
 
@@ -16,7 +17,8 @@ app.get("/", (req, res) => {
   res.send("Server is Running");
 });
 
-app.use("/api/entries", staticRoutes);
+app.use("/api/entries", entryRoutes);
+app.use("/api/ranks", rankRoutes);
 
 const __dirname = path.resolve();
 app.use("/images", express.static(path.join(__dirname, "/images")));
