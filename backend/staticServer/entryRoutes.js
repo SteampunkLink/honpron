@@ -1,6 +1,6 @@
 import express from "express";
-import allEntries from "./entries.js";
-import allGames from "./games.js";
+import allEntries from "./data/entries.js";
+import allGames from "./data/games.js";
 
 const router = express.Router();
 

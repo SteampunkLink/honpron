@@ -1,0 +1,82 @@
+.rank-controls {
+  h2 {
+    color: var(--accent-color);
+    font-family: var(--accent-text);
+    text-align: center;
+  }
+  .rank-controls-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    button {
+      margin: 8px;
+    }
+  }
+}
+
+.a-rank {
+  background: rgb(255, 121, 121);
+  &.hp-btn:hover {
+    background: rgb(202, 80, 80);
+  }
+}
+
+.b-rank {
+  background: rgb(255, 193, 121);
+  &.hp-btn:hover {
+    background: rgb(245, 164, 71);
+  }
+}
+
+.c-rank {
+  background: rgb(255, 242, 121);
+  &.hp-btn:hover {
+    background: rgb(243, 225, 63);
+  }
+}
+
+.d-rank {
+  background: rgb(164, 255, 121);
+  &.hp-btn:hover {
+    background: rgb(119, 243, 61);
+  }
+}
+
+.f-rank {
+  background: rgb(130, 121, 255);
+  &.hp-btn:hover {
+    background: rgb(85, 74, 241);
+  }
+}
+
+.u-rank {
+  background: rgb(170, 170, 170);
+  &.hp-btn:hover {
+    background: rgb(209, 193, 193);
+  }
+}
+
+.rank-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: var(--main-font);
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.rank-box {
+  width: 40%;
+  h3 {
+    color: black;
+    font-family: var(--accent-text);
+    margin: 4px 0;
+    padding: 8px;
+    text-align: center;
+  }
+  ul li:nth-child(even) {
+    color: var(--snes-blue);
+    margin: 5px 0;
+  }
+}

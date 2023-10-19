@@ -269,3 +269,5 @@ const ranks = {
     "Utopia: Creation of a Nation",
   ],
 };
+
+export default ranks;
