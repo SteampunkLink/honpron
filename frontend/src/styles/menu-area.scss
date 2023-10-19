@@ -1,0 +1,9 @@
+.menu-area {
+  width: 23%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-area {
+    width: 100%;
+  }
+}

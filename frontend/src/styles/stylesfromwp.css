@@ -1,0 +1,985 @@
+/*
+Theme Name: Honest Piranha Theme
+Author: SteampunkLink
+Description: Custom Look for My Podcast, Videos, and Blog
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: honestpiranha
+
+A theme created by SteampunkLink to use as a landing site for the SNEScapades Podcast and other gaming related content.
+
+************************************************************
+Table of Contents
+************************************************************
+*/
+
+/* HPRoot */
+/* HPBody */
+/* Blog */
+/* Button */
+/* Comments */
+/* Entry List Item */
+/* FAQ */
+/* Forms */
+/* Navbar */
+/* Pagination */
+/* Single Entry */
+/* SNES List */
+/* Side Nav */
+/* Widget */
+/* Series Header */
+/* Scratch Cards */
+/* Card Flipper */
+/* Media */
+
+/* HPRoot */
+:root {
+  /* Fonts */
+  --main-font: "Audiowide", Helvetica, sans-serif;
+  --article-text: "Glegoo", Times, serif;
+  --accent-text: "Press Start 2P", Helvetica, sans-serif;
+
+  /* Colors */
+  --background-color: #343840;
+  --card-color: #111919;
+  --text-color: #dbdbdb;
+  --accent-color: #d17002;
+
+  --hp-red: #c7390a;
+  --hp-green: #39c70a;
+  --hp-blue: #0a98c7;
+  --hp-yellow: #aaff30;
+  --snes-purple: #4f43ae;
+  --snes-blue: #b5b6e4;
+  --snes-gray: #908a99;
+  --snes-lite: #cec9cc;
+
+  /* size */
+  --hp-max-width: 1148px;
+  --hp-small-screen: 1000px;
+  --hp-phone-screen: 700px;
+  --card-margin: 0.5em 0;
+  --card-padding: 8px;
+}
+
+/* HPBody */
+body {
+  background: black;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-container {
+  background: var(--background-color);
+  margin: 0 auto;
+  max-width: var(--hp-max-width);
+  padding: 0.5em;
+  width: 90%;
+}
+
+/* Blog */
+.single-blog p {
+  padding: 6px;
+}
+.single-blog h2 {
+  font-size: 1.3em;
+  padding: 6px;
+}
+.single-blog_header {
+  color: var(--snes-purple);
+  font-family: var(--main-font);
+  font-size: 1.5em;
+  padding: 4px;
+  text-align: center;
+}
+.single-blog_subheader {
+  color: var(--snes-blue);
+  font-family: var(--main-font);
+  font-size: 1.1em;
+  padding: 4px;
+  text-align: center;
+}
+.single-blog_text {
+  color: var(--snes-lite);
+  font-family: var(--article-text);
+  line-height: 1.2em;
+  padding: 4px;
+}
+
+/* Button */
+input[type="submit"],
+input[type="reset"],
+.hp-btn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1em;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="submit"],
+input[type="reset"],
+.hp-btn:focus {
+  box-shadow: 0px 0px 5px, 5px, var(--accent-color);
+  outline: none;
+}
+input[type="submit"],
+input[type="reset"],
+.hp-btn:active {
+  transform: scale(0.99);
+}
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--snes-gray);
+  font-family: var(--main-font);
+  font-size: 1em;
+}
+.nav-btn:hover {
+  color: var(--snes-blue);
+  cursor: pointer;
+}
+.single-link-btn {
+  background-color: var(--accent-color);
+  color: var(--card-color);
+  font-family: var(--main-font);
+  margin: 1.1em;
+  transition: 0.5s;
+}
+.comment-link-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.1em;
+}
+.comment-link-btn {
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: var(--main-font);
+  padding: 1em 2em;
+  text-align: center;
+  transition: 0.5s;
+}
+.comment-link-btn.twitter {
+  background-color: #004f80;
+}
+.comment-link-btn.masto {
+  background-color: #3088d4;
+}
+.comment-link-btn.insta {
+  background-color: #8f3e00;
+}
+.comment-link-btn.cohost {
+  background-color: #83254f;
+}
+.comment-link-btn.btn-one {
+  background-color: #991605;
+}
+.comment-link-btn.btn-two {
+  background-color: #051b99;
+}
+.comment-link-btn.btn-three {
+  background-color: #047204;
+}
+.single-link-btn:focus,
+.single-link-btn:hover {
+  background-color: var(--snes-lite);
+}
+
+/* Comments */
+.comments-list-area {
+  border-bottom: 5px solid var(--accent-color);
+}
+.comment {
+  width: 80%;
+}
+.comment.depth-2 {
+  margin-left: 1.4em;
+}
+.comment.depth-3 {
+  margin-left: 2.8em;
+}
+.comment-author-area {
+  border-bottom: 1px solid var(--accent-color);
+  color: var(--snes-blue);
+  font-family: var(--main-font);
+  margin-bottom: 0.4em;
+}
+.comment-text-area {
+  margin-left: 0.5em;
+}
+.comment-reply-btn {
+  background: var(--accent-color);
+  font-family: var(--main-font);
+  margin: 1em auto;
+  width: 50%;
+}
+.comment-respond {
+  font-family: var(--main-font);
+  text-align: center;
+}
+.comment-respond h3 {
+  color: var(--accent-color);
+  font-family: var(--accent-text);
+  margin: 1.3em;
+}
+.comment-form p,
+.comment-form label {
+  display: block;
+  padding: 0.3em;
+}
+.form-submit input {
+  background: var(--snes-purple);
+  color: white;
+  font-family: var(--main-font);
+  margin: 0 auto;
+  transition: 0.5s;
+  width: 80%;
+}
+.comment-form-comment textarea {
+  border-radius: 10px;
+  color: var(--snes-gray);
+  font-family: var(--main-font);
+  font-size: 1em;
+  outline: none;
+  padding: 8px;
+}
+.form-submit input:hover,
+.form-submit input:focus {
+  background: var(--snes-blue);
+  color: black;
+}
+
+/* Container Menu */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.main-container_list {
+  width: 75%;
+}
+.main-container_menu {
+  width: 23%;
+}
+
+/* Entry List Item */
+.entry-list-item {
+  background: var(--card-color);
+  border: var(--accent-color) 1px solid;
+  color: var(--text-color);
+  display: block;
+  margin: var(--card-margin);
+  padding: var(--card-padding);
+}
+.entry-list-item h2 {
+  color: var(--accent-color);
+  font-family: var(--accent-text);
+  padding: 5px;
+  text-align: center;
+  transition: 0.5s;
+}
+.entry-list-item h2:hover {
+  color: var(--snes-blue);
+}
+.entry-list-item iframe {
+  display: block;
+  margin: 5px auto;
+  width: 95%;
+}
+.entry-list-item_head {
+  color: var(--snes-gray);
+  display: flex;
+  flex-direction: row;
+  font-family: var(--main-font);
+  justify-content: space-between;
+}
+.entry-list-item_details {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  width: 100%;
+}
+.entry-list-item_details div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.entry-list-item_details div img {
+  height: auto;
+  width: 90%;
+}
+.entry-list-item_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.entry-list-item_img {
+  height: 75%;
+  margin: 0 auto;
+  max-width: 350px;
+  width: 50%;
+}
+.entry-list-item_img img {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+}
+.entry-list-item_excerpt {
+  margin: 1.1em auto;
+  width: 40%;
+}
+.entry-list-item_excerpt p {
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+.entry-list-item_video {
+  margin: 1.1em auto;
+  width: 80%;
+}
+.entry-list-item_date {
+  color: var(--snes-gray);
+  font-family: var(--main-font);
+}
+.entry-list-item_desc {
+  font-family: var(--article-text);
+  line-height: 1.2em;
+  text-align: center;
+}
+.entry-list-item_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+.entry-list-item_footer span {
+  color: var(--snes-gray);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
+  text-align: center;
+}
+.entry-list-item_footer span i {
+  padding: 5px;
+}
+.entry-list-item_footer span .comment-btn {
+  background: transparent;
+  border: 2px solid var(--snes-gray);
+  border-radius: 25px;
+  color: var(--snes-gray);
+  cursor: pointer;
+  font-family: var(--main-font);
+  padding: 2px;
+}
+.entry-list-item_footer span .comment-btn:hover {
+  background: var(--snes-gray);
+  color: black;
+}
+
+/* FAQ */
+#post-60 h3 {
+  color: var(--accent-color);
+  font-family: var(--main-font);
+  font-size: 1.5em;
+  padding: 5px;
+}
+#post-60 p {
+  color: var(--snes-blue);
+  font-family: var(--article-text);
+  line-height: 1.4em;
+  padding: 8px;
+}
+
+/* Forms */
+.hp-form {
+  color: white;
+  font-family: var(--main-font);
+}
+.hp-check {
+  opacity: 0;
+}
+.hp-form h2 {
+  color: var(--snes-blue);
+  font-size: 2em;
+  padding: 8px;
+  text-align: center;
+}
+.hp-form h3 {
+  color: var(--snes-blue);
+  font-size: 1.3em;
+  padding: 8px;
+  text-align: center;
+}
+.hp-form .hp-form_container {
+  background: var(--card-color);
+  color: var(--text-color);
+  margin: var(--card-margin);
+  padding: var(--card-padding);
+}
+.hp-form ul {
+  font-family: var(--article-text);
+}
+.hp-form ul li {
+  margin: 0.4em;
+}
+.hp-input {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  font-weight: normal;
+  margin: 1em auto;
+  width: 80%;
+}
+.hp-input_label {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  word-wrap: normal !important;
+}
+.hp-input_field {
+  border-radius: 10px;
+  color: var(--snes-gray);
+  font-family: var(--main-font);
+  font-size: 1em;
+  outline: none;
+  padding: 8px;
+}
+.hp-input_field:focus {
+  box-shadow: 0px 0px 5px 5px var(--accent-color);
+}
+.hp-input_info {
+  color: var(--snes-purple);
+}
+.hp-form_btn {
+  background: var(--snes-purple);
+  color: var(--snes-lite);
+  margin: 1em auto;
+  transition: 0.5s;
+  width: 80%;
+}
+.hp-form_btn:disabled {
+  background: var(--snes-gray);
+}
+.hp-form_btn:hover:enabled,
+.hp-form_btn:focus:enabled {
+  background: var(--snes-blue);
+  color: var(--background-color);
+  cursor: pointer;
+}
+.hp-form_thanks {
+  color: var(--hp-green);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1.2em;
+  text-align: center;
+}
+.hp-input_checkbox-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px;
+}
+.hp-input_checkbox-group {
+  color: var(--accent-color);
+  margin: 8px;
+}
+.hp-input_file {
+  background: var(--snes-purple);
+  color: var(--snes-lite);
+  transition: 0.5s;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  width: 80%;
+}
+.hp-input_file:hover,
+.hp-input_file:focus {
+  background: var(--snes-blue);
+  color: var(--background-color);
+  cursor: pointer;
+}
+.hp-input_file:focus-within {
+  background: var(--snes-blue);
+  color: var(--background-color);
+  box-shadow: 0px 0px 5px 5px var(--accent-color);
+  outline: none;
+}
+.error-text {
+  color: var(--hp-red);
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  background: var(--card-color);
+  border-bottom: var(--accent-color) 3px solid;
+  color: var(--text-color);
+  font-size: 1.2em;
+  height: 7vh;
+}
+.navbar .navbar-inner {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--hp-max-width);
+  width: 90%;
+}
+.navbar .navbar-inner .navbar_left {
+  color: var(--accent-color);
+  font-family: var(--accent-text);
+}
+.navbar .navbar-inner .navbar_left:hover {
+  color: var(--snes-purple);
+}
+.navbar .navbar_right ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.navbar .navbar_right ul li {
+  color: var(--snes-gray);
+  font-family: var(--main-font);
+  padding: 0.5em;
+}
+.navbar .navbar_right ul li:hover {
+  color: var(--snes-blue);
+}
+
+/* Pagination */
+.pagination {
+  align-items: center;
+  background: var(--card-color);
+  display: flex;
+  font-family: var(--accent-text);
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+}
+.pagination span,
+.pagination a {
+  padding: 15px;
+}
+.pagination a {
+  color: var(--accent-color);
+}
+.pagination a:hover {
+  color: var(--snes-purple);
+}
+.pagination span {
+  color: var(--snes-gray);
+}
+
+/* Single Entry */
+.single-entry {
+  background: var(--card-color);
+  color: var(--text-color);
+  margin: var(--card-margin);
+  padding: var(--card-padding);
+}
+.single-entry h2 {
+  color: var(--accent-color);
+  font-family: var(--accent-text);
+  padding: 5px;
+  text-align: center;
+}
+.single-entry-content {
+  display: flex;
+  justify-content: center;
+}
+.single-entry-list-btn {
+  background: var(--snes-purple);
+  color: var(--snes-blue);
+  font-family: var(--main-font);
+  margin: 1.2em auto;
+  transition: 10ms;
+}
+.single-entry-list-btn:hover {
+  background: var(--snes-blue);
+  color: var(--snes-purple);
+}
+.single-entry ul li {
+  color: var(--snes-lite);
+  font-family: var(--accent-text);
+  padding: 4px;
+}
+.entry-single-item_details {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  margin-top: 15px;
+  width: 100%;
+}
+.entry-single-item_details div {
+  width: 50%;
+}
+.entry-single-item_details div img {
+  padding: 5px;
+  height: auto;
+  width: 100%;
+}
+.entry-single-item_details p {
+  margin: 0 12px 10px;
+}
+.entry-single-item_games {
+  margin: 10px 0;
+}
+.entry-single-item_games h3 {
+  color: var(--snes-blue);
+  font-family: var(--accent-text);
+  padding-top: 12px;
+  text-align: center;
+}
+.entry-single-item_games-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.entry-single-item_game {
+  width: 45%;
+}
+.entry-single-item_game h4 {
+  color: var(--snes-lite);
+  font-family: var(--main-font);
+  padding-top: 12px;
+  text-align: center;
+}
+.entry-single-item_game img {
+  width: 100%;
+}
+
+/* SNES List */
+.tier-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tier-buttons button {
+  background: #ad8d0a;
+  color: white;
+  font-family: var(--main-font);
+  margin: 3px;
+}
+.tier-buttons button:hover {
+  color: black;
+}
+.tier-ranks h3 {
+  font-family: var(--accent-text);
+}
+.tier-ranks ul,
+.tier-ranks ol {
+  list-style-position: inside;
+  width: 90%;
+}
+.tier-ranks li {
+  font-family: var(--main-font);
+  margin: 5px;
+}
+.tier-ranks li:nth-child(even) {
+  color: var(--snes-blue);
+}
+
+/* Side Nav */
+.menu-area {
+  display: flex;
+  flex-direction: column;
+}
+.menu-area .menu li a {
+  color: var(--accent-color);
+  display: block;
+  font-family: var(--main-font);
+  margin: 0.5em;
+}
+.menu-area .menu li .sub-menu li a {
+  color: var(--snes-blue);
+  padding-left: 18px;
+}
+.menu-area .menu li a:hover,
+.menu-area .menu li .sub-menu li a:hover {
+  color: var(--snes-purple);
+}
+
+/* Widget */
+.widget {
+  color: var(--snes-blue);
+  font-family: var(--accent-text);
+  text-align: center;
+}
+#menu-social-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+#menu-social-menu li {
+  align-items: baseline;
+  color: var(--accent-color);
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  justify-content: center;
+  margin: 5px;
+}
+#menu-social-menu li:hover {
+  color: var(--snes-purple);
+}
+#menu-social-menu li a {
+  font-family: var(--main-font);
+  font-size: 0.7em;
+  margin-left: 0.4em;
+  text-align: right;
+}
+
+/* Series Header */
+.series-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.series-header-left img {
+  margin: 5px;
+}
+.series-header-right {
+  color: white;
+  margin: 0 auto;
+  width: 60%;
+}
+.series-header-right h2 {
+  color: var(--snes-blue);
+  font-family: var(--accent-text);
+  font-size: 1.3em;
+  padding: 8px;
+  text-align: center;
+}
+.series-header-right p {
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+/* Scratch Cards */
+.nintendo-scratch-cards {
+  background-image: url(./img/nintendoStickers.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin: 5px 0;
+  min-height: 800px;
+  width: 100%;
+}
+.nintendo-scratch-cards .break {
+  height: 10px;
+}
+.nintendo-scratch-cards nav {
+  background: #908a99;
+  color: black;
+  font-family: var(--main-font);
+  margin: 5px auto;
+  padding: 10px;
+  width: 90%;
+}
+.nintendo-scratch-cards nav label {
+  margin-left: 35px;
+}
+.nintendo-scratch-cards nav button {
+  font-family: var(--main-font);
+}
+.nintendo-scratch-cards .long {
+  background-size: cover;
+  height: 360px;
+  margin: 0 auto;
+  width: 500px;
+}
+.dot {
+  background: grey;
+  border-radius: 50%;
+  height: 45px;
+  position: relative;
+  width: 45px;
+  z-index: 1;
+}
+.scratch-off {
+  height: 46px;
+  position: absolute;
+  width: 46px;
+  z-index: 2;
+}
+.scratch-off-0 {
+  background: url(./img/scratch_sprite.png) -7px -7px;
+}
+.scratch-off-1 {
+  background: url(./img/scratch_sprite.png) -7px -70px;
+}
+.scratch-off-2 {
+  background: url(./img/scratch_sprite.png) -7px -132px;
+}
+.scratch-off-3 {
+  background: url(./img/scratch_sprite.png) -7px -194px;
+}
+#instructionArea {
+  background: white;
+  color: black;
+  margin: 9px;
+  text-align: center;
+}
+#instructionArea h3 {
+  color: var(--snes-purple);
+  font-family: var(--accent-text);
+}
+#instructionArea h4 {
+  padding: 5px;
+  font-size: 1.3em;
+}
+#innerInstructions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#innerInstructions ul {
+  list-style-position: inside;
+  list-style: circle;
+  padding: 5px;
+  text-align: left;
+}
+#innerInstructions ul li {
+  margin: 5px;
+}
+#instructionLeft {
+  width: 60%;
+}
+.instruction-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+/* Card Flipper */
+.flip-container {
+  min-height: 360px;
+  margin: 0 auto;
+  perspective: 1000px;
+  width: 500px;
+}
+.flipper {
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+}
+.flip-container.active .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container .front,
+.flip-container .back {
+  backface-visibility: hidden;
+  background-size: cover;
+  height: 360px;
+  position: absolute;
+  width: 500px;
+}
+.flip-container .front.tall,
+.flip-container .back.tall {
+  height: 500px;
+  width: 360px;
+}
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Media */
+@media only screen and (max-width: 1000px) {
+  /* HPBody */
+  .site-container {
+    width: 100%;
+  }
+  /* Comments */
+  .comment {
+    width: 95%;
+  }
+  /* Container Menu */
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .main-container_list,
+  .main-container_menu {
+    width: 100%;
+  }
+  /* Entry List Item */
+  .entry-list-item {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* Nav Bar */
+  .navbar {
+    font-size: 0.7em;
+    padding: 5px;
+  }
+  .menu-area,
+  .widget-area,
+  .entry-list-item {
+    width: 90%;
+  }
+  /* Entry List Item */
+  .entry-list-item_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .entry-list-item_img {
+    width: 80%;
+  }
+  .entry-list-item_excerpt {
+    width: 70%;
+  }
+  .entry-list-item_video {
+    width: 95%;
+  }
+  .comment-link-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    margin: 1.1em;
+  }
+  .comment-link-btn {
+    margin: 5px;
+  }
+  /* Ranking List */
+  .tier-buttons {
+    font-size: 0.8em;
+    justify-content: space-around;
+  }
+  /* Scratch Cards */
+  #innerInstructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #instructionLeft {
+    width: 90%;
+  }
+  #instructionLeft ul {
+    list-style-position: inside;
+  }
+}

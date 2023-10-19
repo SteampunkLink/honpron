@@ -1,0 +1,86 @@
+input[type="submit"],
+input[type="reset"],
+.hp-btn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1em;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="submit"],
+input[type="reset"],
+.hp-btn:focus {
+  box-shadow: 0px 0px 5px, 5px, var(--accent-color);
+  outline: none;
+}
+input[type="submit"],
+input[type="reset"],
+.hp-btn:active {
+  transform: scale(0.99);
+}
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--snes-gray);
+  font-family: var(--main-font);
+  font-size: 1em;
+}
+.nav-btn:hover {
+  color: var(--snes-blue);
+  cursor: pointer;
+}
+.single-link-btn {
+  background-color: var(--accent-color);
+  color: var(--card-color);
+  font-family: var(--main-font);
+  margin: 1.1em;
+  transition: 0.5s;
+}
+// .comment-link-group {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   margin: 1.1em;
+// }
+// .youtube-btn {
+//   border-radius: 10px;
+//   cursor: pointer;
+//   font-family: var(--main-font);
+//   padding: 1em 2em;
+//   text-align: center;
+//   transition: 0.5s;
+// }
+// .comment-link-btn.twitter {
+//   background-color: #004f80;
+// }
+// .comment-link-btn.masto {
+//   background-color: #3088d4;
+// }
+// .comment-link-btn.insta {
+//   background-color: #8f3e00;
+// }
+// .comment-link-btn.cohost {
+//   background-color: #83254f;
+// }
+.youtube-btn {
+  background-color: #991605;
+  color: white;
+  margin: 6px;
+}
+// .comment-link-btn.btn-two {
+//   background-color: #051b99;
+// }
+// .comment-link-btn.btn-three {
+//   background-color: #047204;
+// }
+.single-link-btn:focus,
+.single-link-btn:hover {
+  background-color: var(--snes-lite);
+}

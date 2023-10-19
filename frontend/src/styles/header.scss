@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  background: var(--card-color);
+  border-bottom: var(--accent-color) 3px solid;
+  color: var(--text-color);
+  font-size: 1.2em;
+  height: 7vh;
+  .header-inner {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: var(--hp-max-width);
+    width: 90%;
+    .header_left {
+      color: var(--accent-color);
+      font-family: var(--accent-text);
+      &:hover {
+        color: var(--snes-purple);
+      }
+    }
+    .header_right {
+      color: var(--snes-gray);
+      font-family: var(--main-font);
+    }
+  }
+}

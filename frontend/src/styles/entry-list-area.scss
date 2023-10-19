@@ -1,0 +1,110 @@
+.entry-list-item {
+  .entry-list-item_head {
+    color: var(--snes-gray);
+    display: flex;
+    flex-direction: row;
+    font-family: var(--main-font);
+    justify-content: space-between;
+  }
+  h2 {
+    color: var(--accent-color);
+    font-family: var(--accent-text);
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+    &:hover {
+      color: var(--snes-blue);
+    }
+  }
+  .entry-list-item_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .entry-list-item_img {
+    height: 75%;
+    margin: 0 auto;
+    max-width: 350px;
+    width: 50%;
+    img {
+      padding: 5px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .entry-list-item_excerpt {
+    margin: 1.1em auto;
+    width: 40%;
+    iframe {
+      display: block;
+      margin: 5px auto;
+      width: 95%;
+    }
+    h3 {
+      color: var(--snes-blue);
+      font-family: var(--accent-text);
+    }
+    li {
+      font-family: var(--main-font);
+      margin: 6px;
+    }
+  }
+  .entry-list-item_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    span {
+      align-items: center;
+      color: var(--snes-gray);
+      display: flex;
+      flex-direction: column;
+      font-family: var(--main-font);
+      text-align: center;
+      i {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+// .entry-list-item_details {
+//   display: flex;
+//   flex-direction: row;
+//   font-size: 1.1em;
+//   line-height: 1.2em;
+//   width: 100%;
+// }
+// .entry-list-item_details div {
+//   display: flex;
+//   flex-direction: column;
+//   width: 50%;
+// }
+// .entry-list-item_details div img {
+//   height: auto;
+//   width: 90%;
+// }
+//
+// .entry-list-item_excerpt p {
+//   font-size: 1.1em;
+//   line-height: 1.2em;
+// }
+// .entry-list-item_video {
+//   margin: 1.1em auto;
+//   width: 80%;
+// }
+// .entry-list-item_date {
+//   color: var(--snes-gray);
+//   font-family: var(--main-font);
+// }
+// .entry-list-item_desc {
+//   font-family: var(--article-text);
+//   line-height: 1.2em;
+//   text-align: center;
+// }
+
+@media only screen and (max-width: 1000px) {
+  .entry-list {
+    width: 100%;
+  }
+}
