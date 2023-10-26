@@ -14,6 +14,7 @@ import "./index.scss";
 import HomeScreen from "./screens/HomeScreen";
 import EpisodeScreen from "./screens/EpisodeScreen";
 import RankScreen from "./screens/RankScreen";
+import FaqsScreen from "./screens/FaqsScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
       <Route index={true} path="/" element={<HomeScreen />} />
       <Route path="/episode/:show/:epNum" element={<EpisodeScreen />} />
       <Route path="/ranks" element={<RankScreen />} />
+      <Route path="/faqs" element={<FaqsScreen />} />
     </Route>
   )
 );

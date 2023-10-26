@@ -7,7 +7,10 @@ const Sidebar = () => {
         <li>
           <Link to="/ranks">SNES Game Rankings</Link>
         </li>
-        <li>FAQs</li>
+        <li>
+          <Link to="/faqs">FAQs</Link>
+        </li>
+        <li>Friends of the Show</li>
         <li>Nintendo Scratch Cards</li>
       </ul>
     </div>

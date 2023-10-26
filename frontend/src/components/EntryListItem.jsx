@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaPodcast,
   FaVideo,
@@ -17,7 +18,9 @@ const EntryListItem = ({ entry, full }) => {
           <FaPodcast />
         </li>
       </ul>
-      <h2>{entry.title}</h2>
+      <Link to={`/episode/${entry.show}/${entry.episode}`}>
+        <h2>{entry.title}</h2>
+      </Link>
       <div className="entry-list-item_content">
         <div className="entry-list-item_img">
           <img src={`/images/${entry.image}`} />

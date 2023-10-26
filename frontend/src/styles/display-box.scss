@@ -5,4 +5,9 @@
   display: block;
   margin: var(--card-margin);
   padding: var(--card-padding);
+  h2 {
+    color: var(--accent-color);
+    font-family: var(--accent-text);
+    text-align: center;
+  }
 }

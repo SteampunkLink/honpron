@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
+import PodcastPlatforms from "./components/PodcastPlatforms";
 import Sidebar from "./components/Sidebar";
+import SocialMedia from "./components/SocialMedia";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
         </div>
         <div className="sidebar-container">
           <Sidebar />
+          <SocialMedia />
+          <PodcastPlatforms />
         </div>
       </main>
     </>

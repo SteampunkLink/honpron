@@ -1,8 +1,10 @@
 import { Helmet } from "react-helmet-async";
+import Icon from "../../favicon.png";
 
 const Meta = ({ title, description, keywords }) => {
   return (
     <Helmet>
+      <link rel="icon" type="image/x-icon" href={Icon} />
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
