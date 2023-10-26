@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useGetAllEntriesQuery } from "../slices/entriesApiSlice";
 import Meta from "../components/Meta";
 import EntryListItem from "../components/EntryListItem";
+import ErrorMsg from "../components/ErrorMsg";
+import Loading from "../components/Loading";
 
 const HomeScreen = () => {
   const { data: entryData, isLoading, error } = useGetAllEntriesQuery();
@@ -10,7 +12,8 @@ const HomeScreen = () => {
       <Meta />
       <div className="entry-list">
         {isLoading && "Loading..."}
-        {error && "Sorry, and error has occured."}
+        {error && <ErrorMsg error={error} />}
+        {isLoading && <Loading />}
         {entryData &&
           entryData.map((entry, idx) => (
             <div key={idx} className="display-box">

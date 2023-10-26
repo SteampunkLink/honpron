@@ -1,0 +1,28 @@
+.loading {
+  text-align: center;
+  svg {
+    animation: cogTurn 3s linear infinite;
+    color: var(--accent-color);
+    font-size: 8em;
+    margin: 0 auto;
+    transition: 0.5;
+  }
+}
+
+@keyframes cogTurn {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: 270deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
