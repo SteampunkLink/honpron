@@ -3,7 +3,12 @@ const Sidebar = () => {
   return (
     <div className="sidebar-area">
       <ul className="display-box">
-        <li>SNEScapades</li>
+        <li>
+          <Link to="/series/snescapades">SNEScapades</Link>
+        </li>
+        <li>
+          <Link to="/series">Series Index</Link>
+        </li>
         <li>
           <Link to="/ranks">SNES Game Rankings</Link>
         </li>

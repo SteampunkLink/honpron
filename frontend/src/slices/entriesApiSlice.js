@@ -9,6 +9,18 @@ export const entriesApiSlice = apiSlice.injectEndpoints({
       }),
       keepUnusedDataFor: 5,
     }),
+    getSeriesIndex: builder.query({
+      query: () => ({
+        url: `${ENTRIES_URL}/series`,
+      }),
+      keepUnusedDataFor: 5,
+    }),
+    getOneSeries: builder.query({
+      query: (series) => ({
+        url: `${ENTRIES_URL}/series/${series}`,
+      }),
+      keepUnusedDataFor: 5,
+    }),
     getOneEntry: builder.query({
       query: (ep) => ({
         url: `${ENTRIES_URL}/episode/${ep.show}/${ep.epNum}`,
@@ -18,4 +30,9 @@ export const entriesApiSlice = apiSlice.injectEndpoints({
   }),
 });
 
-export const { useGetAllEntriesQuery, useGetOneEntryQuery } = entriesApiSlice;
+export const {
+  useGetAllEntriesQuery,
+  useGetSeriesIndexQuery,
+  useGetOneSeriesQuery,
+  useGetOneEntryQuery,
+} = entriesApiSlice;
