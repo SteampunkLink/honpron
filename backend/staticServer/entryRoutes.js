@@ -15,7 +15,7 @@ const getAllEntries = () => {
           title: allGames[g].title,
           index: g,
         }));
-        formattedEpisodes.push({ ...ep, games, show });
+        formattedEpisodes.push({ ...ep, games, show: allEntries[show].title });
       });
     }
     result = result.concat(formattedEpisodes);
@@ -24,7 +24,34 @@ const getAllEntries = () => {
 };
 
 const getOneSeries = (show) => {
-  return allEntries[show];
+  let formattedEpisodes = [];
+  if (show === "snescapades") {
+    allEntries[show].episodes.forEach((ep) => {
+      const games = ep.games.map((g) => ({
+        title: allGames[g].title,
+        index: g,
+      }));
+      formattedEpisodes.push({ ...ep, games, show: allEntries[show].title });
+    });
+  }
+  return {
+    show: allEntries[show].title,
+    description: allEntries[show].description,
+    episodes: formattedEpisodes,
+  };
+};
+
+const getSeriesIndex = () => {
+  const masterShowList = Object.keys(allEntries);
+  let result = [];
+  masterShowList.forEach((show) => {
+    result.push({
+      slug: show,
+      title: allEntries[show].title,
+      description: allEntries[show].description,
+    });
+  });
+  return result;
 };
 
 const getOneEntry = (series, episode) => {
@@ -39,6 +66,11 @@ const getOneEntry = (series, episode) => {
 router.get("/", (req, res) => {
   const epList = getAllEntries();
   res.status(200).json(epList);
+});
+
+router.get("/series", (req, res) => {
+  const seriesIndex = getSeriesIndex();
+  res.status(200).json(seriesIndex);
 });
 
 router.get("/series/:show", (req, res) => {

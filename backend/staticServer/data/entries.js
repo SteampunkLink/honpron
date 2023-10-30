@@ -15,6 +15,7 @@ const monthEnum = {
 
 const allEntries = {
   snescapades: {
+    title: "SNEScapades",
     description:
       "Our flagship podcast series where Chase Keys and Emmy Zero discuss every Super NES game released in North America. We play them briefly, judge them harshly, and rank them.",
     episodes: [
