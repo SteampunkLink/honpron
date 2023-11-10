@@ -56,6 +56,12 @@ const allGames = [
     mobyURL: "https://www.mobygames.com/game/30977/ranma-12-hard-battle/",
     rank: "B",
   },
+  {
+    title: "Clock Tower",
+    manualURL: "",
+    mobyURL: "",
+    rank: "A",
+  },
 ];
 
 export default allGames;

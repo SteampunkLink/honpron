@@ -17,6 +17,7 @@ import SeriesScreen from "./screens/SeriesScreen";
 import EpisodeScreen from "./screens/EpisodeScreen";
 import RankScreen from "./screens/RankScreen";
 import FaqsScreen from "./screens/FaqsScreen";
+import ScratchCardScreen from "./screens/ScratchCardScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/episode/:show/:epNum" element={<EpisodeScreen />} />
       <Route path="/ranks" element={<RankScreen />} />
       <Route path="/faqs" element={<FaqsScreen />} />
+      <Route path="/scratch" element={<ScratchCardScreen />} />
     </Route>
   )
 );

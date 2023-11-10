@@ -9,6 +9,10 @@
       color: var(--snes-blue);
       cursor: pointer;
     }
+    &.selected {
+      color: #888;
+      pointer-events: none;
+    }
   }
 }
 

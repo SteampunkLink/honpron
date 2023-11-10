@@ -1,0 +1,129 @@
+/* Scratch Cards */
+.nintendo-scratch-cards {
+  background-image: url(images/scratchcards/nintendoStickers.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin: 5px 0;
+  min-height: 800px;
+  width: 100%;
+  nav {
+    background: #908a99;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+    margin: 5px auto;
+    padding: 10px;
+    width: 90%;
+    .nintendo-scratch-cards_form-group {
+      display: flex;
+      flex-direction: row;
+      margin: 6px auto;
+      width: 90%;
+      label {
+        padding: 2px;
+        text-align: right;
+        width: 30%;
+      }
+      select {
+        width: 60%;
+      }
+    }
+  }
+}
+
+.nintendo-scratch-cards nav button {
+  font-family: var(--main-font);
+}
+.nintendo-scratch-cards .long {
+  background-size: cover;
+  height: 360px;
+  margin: 0 auto;
+  width: 500px;
+}
+.dot {
+  background: grey;
+  border-radius: 50%;
+  height: 45px;
+  position: relative;
+  width: 45px;
+  z-index: 1;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.scratch-off {
+  height: 46px;
+  position: absolute;
+  width: 46px;
+  z-index: 2;
+}
+
+#instructionArea {
+  background: white;
+  color: black;
+  margin: 9px;
+  text-align: center;
+}
+#instructionArea h3 {
+  color: var(--snes-purple);
+  font-family: var(--accent-text);
+}
+#instructionArea h4 {
+  padding: 5px;
+  font-size: 1.3em;
+}
+#innerInstructions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#innerInstructions ul {
+  list-style-position: inside;
+  list-style: circle;
+  padding: 5px;
+  text-align: left;
+}
+#innerInstructions ul li {
+  margin: 5px;
+}
+#instructionLeft {
+  width: 60%;
+}
+.instruction-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+/* Card Flipper */
+.flip-container {
+  min-height: 360px;
+  margin: 0 auto;
+  perspective: 1000px;
+  width: 500px;
+}
+.flipper {
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+}
+.flip-container.active .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container .front {
+  backface-visibility: hidden;
+  background-size: cover;
+  height: 360px;
+  position: absolute;
+  width: 500px;
+}
+.flip-container .front.tall {
+  height: 500px;
+  width: 360px;
+}
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}

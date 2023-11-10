@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import entryRoutes from "./staticServer/entryRoutes.js";
 import rankRoutes from "./staticServer/rankRoutes.js";
 import faqRoutes from "./staticServer/faqRoutes.js";
+import cardRoutes from "./staticServer/cardRoutes.js";
 
 import { errorHandler } from "./middleware/errorMiddleware.js";
 
@@ -23,6 +24,7 @@ app.get("/", (req, res) => {
 app.use("/api/entries", entryRoutes);
 app.use("/api/ranks", rankRoutes);
 app.use("/api/faqs", faqRoutes);
+app.use("/api/cards", cardRoutes);
 
 const __dirname = path.resolve();
 app.use("/images", express.static(path.join(__dirname, "/images")));
