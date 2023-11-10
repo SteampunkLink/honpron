@@ -36,6 +36,7 @@ const ranks = {
     "F-Zero",
     "Disney's Aladdin",
     "Super Mario World",
+    "Clock Tower",
   ],
   B: [
     "BlaZeon The Bio-Cyborg Challenge",
