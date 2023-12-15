@@ -1,7 +1,4 @@
-import express from "express";
-import allCards, { defaultCard } from "./data/cards.js";
-
-const router = express.Router();
+import allCards from "../data/cards.js";
 
 const getCardIds = () => {
   const gamesArr = [];
@@ -28,22 +25,4 @@ const getCard = (cardId) => {
   return allCards[gameIdx].cards[cardIdx];
 };
 
-router.get("/list", (req, res) => {
-  const data = getCardIds();
-  res.send(data);
-});
-
-router.get("/", (req, res) => {
-  res.status(200).json(defaultCard);
-});
-
-router.get("/:id", (req, res) => {
-  const card = getCard(req.params.id);
-  if (!card) {
-    res.status(404);
-    throw new Error("Card not found.");
-  }
-  res.status(200).json(card);
-});
-
-export default router;
+export { getCardIds, getCard };

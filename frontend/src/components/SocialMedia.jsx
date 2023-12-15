@@ -1,9 +1,11 @@
-import { FaInstagram, FaMastodon, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { TbBrandCohost } from "react-icons/tb";
+import { GrStatusUnknownSmall } from "react-icons/gr";
 const SocialMedia = () => {
   return (
     <div className="sidebar-area">
       <div className="display-box">
+        <h2>Social Media</h2>
         <ul className="social-box">
           <li>
             <a
@@ -27,12 +29,13 @@ const SocialMedia = () => {
           </li>
           <li>
             <a
-              href="https://mstdn.social/@snescapades"
+              href="https://bsky.app/profile/snescapades.bsky.social"
               target="_blank"
-              aria-label="Mastodon"
-              title="Mastodon"
+              aria-label="BlueSky"
+              title="BlueSky"
+              style={{ color: "blue" }}
             >
-              <FaMastodon />
+              <GrStatusUnknownSmall />
             </a>
           </li>
           <li>

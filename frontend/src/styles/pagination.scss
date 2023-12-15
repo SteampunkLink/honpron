@@ -1,0 +1,29 @@
+.pagination {
+  align-items: center;
+  color: var(--accent-color);
+  display: flex;
+  flex-direction: row;
+  font-family: var(--accent-text);
+  font-size: 2em;
+  justify-content: center;
+  a {
+    border-radius: 5px;
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 0;
+    transition: 0.5s;
+    &:hover {
+      color: var(--snes-purple);
+    }
+    &.disabled-link {
+      color: var(--snes-gray);
+      pointer-events: none;
+    }
+  }
+  p {
+    margin: 0 15px 0 15px;
+  }
+}

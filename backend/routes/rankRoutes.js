@@ -1,5 +1,5 @@
 import express from "express";
-import allRanks from "./data/ranks.js";
+import allRanks from "../data/ranks.js";
 
 const router = express.Router();
 

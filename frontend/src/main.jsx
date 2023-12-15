@@ -18,17 +18,21 @@ import EpisodeScreen from "./screens/EpisodeScreen";
 import RankScreen from "./screens/RankScreen";
 import FaqsScreen from "./screens/FaqsScreen";
 import ScratchCardScreen from "./screens/ScratchCardScreen";
+import FriendsScreen from "./screens/FriendsScreen";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index={true} path="/" element={<HomeScreen />} />
+      <Route path="/page/:pageNum" element={<HomeScreen />} />
       <Route path="/series" element={<SeriesIndexScreen />} />
       <Route path="/series/:seriesName" element={<SeriesScreen />} />
+      <Route path="/series/:seriesName/:pageNum" element={<SeriesScreen />} />
       <Route path="/episode/:show/:epNum" element={<EpisodeScreen />} />
       <Route path="/ranks" element={<RankScreen />} />
       <Route path="/faqs" element={<FaqsScreen />} />
       <Route path="/scratch" element={<ScratchCardScreen />} />
+      <Route path="/friends" element={<FriendsScreen />} />
     </Route>
   )
 );

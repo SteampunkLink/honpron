@@ -19,7 +19,7 @@ const EpisodeScreen = () => {
       {error && <ErrorMsg error={error} />}
       {isLoading && <Loading />}
       <div className="display-box">
-        {entryData && <EntryListItem entry={entryData} full={true} />}
+        {entryData && <EntryListItem entry={entryData} />}
         {entryData?.blog && <BlogDisplay blog={entryData.blog} />}
       </div>
     </>

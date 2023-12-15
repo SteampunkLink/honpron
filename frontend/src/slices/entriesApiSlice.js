@@ -4,8 +4,9 @@ import { ENTRIES_URL } from "../constants";
 export const entriesApiSlice = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     getAllEntries: builder.query({
-      query: () => ({
+      query: (pageNum) => ({
         url: ENTRIES_URL,
+        params: { pageNum },
       }),
       keepUnusedDataFor: 5,
     }),
@@ -16,8 +17,9 @@ export const entriesApiSlice = apiSlice.injectEndpoints({
       keepUnusedDataFor: 5,
     }),
     getOneSeries: builder.query({
-      query: (series) => ({
-        url: `${ENTRIES_URL}/series/${series}`,
+      query: ({ seriesName, pageNum }) => ({
+        url: `${ENTRIES_URL}/series/${seriesName}`,
+        params: { pageNum },
       }),
       keepUnusedDataFor: 5,
     }),
