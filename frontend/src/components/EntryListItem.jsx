@@ -9,16 +9,18 @@ import {
 import PodcastDisplay from "./PodcastDisplay";
 import DateDisplay from "./DateDisplay";
 
-const EntryListItem = ({ entry, full }) => {
+const EntryListItem = ({ entry }) => {
   return (
     <article className="entry-list-item">
       <ul className="entry-list-item_head">
         <li>{entry.show.toUpperCase()}</li>
         <li>
-          <FaPodcast />
+          {entry.type === "podcast" && <FaPodcast />}
+          {entry.type === "video" && <FaVideo />}
+          {entry.type === "blog" && <FaPencilAlt />}
         </li>
       </ul>
-      <Link to={`/episode/${entry.show}/${entry.episode}`}>
+      <Link to={`/episode/${entry.slug}/${entry.episode}`}>
         <h2>{entry.title}</h2>
       </Link>
       <div className="entry-list-item_content">
@@ -27,7 +29,7 @@ const EntryListItem = ({ entry, full }) => {
         </div>
         <div className="entry-list-item_excerpt">
           <PodcastDisplay source={entry.embedURL} />
-          {entry.games?.length && (
+          {entry.games?.length ? (
             <>
               <h3>Games Discused</h3>
               <ul>
@@ -36,12 +38,14 @@ const EntryListItem = ({ entry, full }) => {
                 ))}
               </ul>
             </>
+          ) : null}
+          {entry.youtubeURL && (
+            <a href={entry.youtubeURL}>
+              <div className="hp-btn single-link-btn youtube-btn">
+                Watch/Comment on YouTube
+              </div>
+            </a>
           )}
-          <a href={entry.youtubeURL}>
-            <div className="hp-btn single-link-btn youtube-btn">
-              Watch/Comment on YouTube
-            </div>
-          </a>
         </div>
       </div>
       <div className="entry-list-item_footer">
@@ -56,10 +60,6 @@ const EntryListItem = ({ entry, full }) => {
       </div>
     </article>
   );
-};
-
-EntryListItem.defaultProps = {
-  full: false,
 };
 
 export default EntryListItem;

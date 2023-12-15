@@ -1,7 +1,7 @@
 const PodcastDisplay = ({ source }) => {
   return (
     <>
-      <iframe src={source} frameborder="0" scrolling="no"></iframe>
+      <iframe src={source} frameBorder="0" scrolling="no"></iframe>
     </>
   );
 };

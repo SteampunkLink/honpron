@@ -1,5 +1,5 @@
 import express from "express";
-import allFaqs from "./data/faqs.js";
+import allFaqs from "../data/faqs.js";
 
 const router = express.Router();
 

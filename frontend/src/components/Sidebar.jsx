@@ -3,24 +3,27 @@ const Sidebar = () => {
   const { pathname } = useLocation();
   return (
     <div className="sidebar-area">
-      {console.log(pathname)}
       <ul className="display-box">
-        <li className={pathname === "/series/snescapades" && "selected"}>
+        <li
+          className={
+            pathname === "/series/snescapades" ? "selected" : undefined
+          }
+        >
           <Link to="/series/snescapades">SNEScapades</Link>
         </li>
-        <li className={pathname === "/series" && "selected"}>
+        <li className={pathname === "/series" ? "selected" : undefined}>
           <Link to="/series">Series Index</Link>
         </li>
-        <li className={pathname === "/ranks" && "selected"}>
+        <li className={pathname === "/ranks" ? "selected" : undefined}>
           <Link to="/ranks">SNES Game Rankings</Link>
         </li>
-        <li className={pathname === "/faqs" && "selected"}>
+        <li className={pathname === "/faqs" ? "selected" : undefined}>
           <Link to="/faqs">FAQs</Link>
         </li>
-        <li className={pathname === "/friends" && "selected"}>
-          Friends of the Show
+        <li className={pathname === "/friends" ? "selected" : undefined}>
+          <Link to="/friends">Friends of the Show</Link>
         </li>
-        <li className={pathname === "/scratch" && "selected"}>
+        <li className={pathname === "/scratch" ? "selected" : undefined}>
           <Link to="/scratch">Nintendo Scratch Cards</Link>
         </li>
       </ul>
