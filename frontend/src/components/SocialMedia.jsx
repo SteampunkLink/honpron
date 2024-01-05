@@ -1,11 +1,21 @@
+import { useState } from "react";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { TbBrandCohost } from "react-icons/tb";
-import { GrStatusUnknownSmall } from "react-icons/gr";
+import { PiButterflyFill } from "react-icons/pi";
+
 const SocialMedia = () => {
+  const [label, setLabel] = useState("");
+  const handleLabel = (e) => {
+    setLabel(e.target.title);
+  };
+  const clearLabel = () => {
+    setLabel("");
+  };
   return (
     <div className="sidebar-area">
       <div className="display-box">
         <h2>Social Media</h2>
+        <p className="sidebar-label">{label}</p>
         <ul className="social-box">
           <li>
             <a
@@ -13,6 +23,8 @@ const SocialMedia = () => {
               target="_blank"
               aria-label="YouTube"
               title="YouTube"
+              onMouseOver={handleLabel}
+              onMouseLeave={clearLabel}
             >
               <FaYoutube />
             </a>
@@ -23,6 +35,8 @@ const SocialMedia = () => {
               target="_blank"
               aria-label="Instagram"
               title="Instagram"
+              onMouseOver={handleLabel}
+              onMouseLeave={clearLabel}
             >
               <FaInstagram />
             </a>
@@ -33,9 +47,10 @@ const SocialMedia = () => {
               target="_blank"
               aria-label="BlueSky"
               title="BlueSky"
-              style={{ color: "blue" }}
+              onMouseOver={handleLabel}
+              onMouseLeave={clearLabel}
             >
-              <GrStatusUnknownSmall />
+              <PiButterflyFill />
             </a>
           </li>
           <li>
@@ -44,6 +59,8 @@ const SocialMedia = () => {
               target="_blank"
               aria-label="Cohost"
               title="Cohost"
+              onMouseOver={handleLabel}
+              onMouseLeave={clearLabel}
             >
               <TbBrandCohost />
             </a>

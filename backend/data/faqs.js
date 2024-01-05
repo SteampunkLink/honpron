@@ -1,17 +1,18 @@
 const allFaqs = [
   {
     question: "Pronoun check?",
-    answer: "My (Chase Keys) pronouns are he/him. Emmy's pronouns are she/her.",
+    answer:
+      "My (Chase Keys') pronouns are he/him. Emmy Zero's pronouns are she/her.",
   },
   {
     question: "What's your release schedule?",
     answer:
-      "We don't really have one. I try to get an episode out every two weeks, but it doesn't always happen. We're a free show, so... *shrugs*",
+      "I'm trying to have a new episode up every Thursday, but there's a chance I might miss some. We're a free show, so... *shrugs*",
   },
   {
     question: "Why did SteampunkLink change his name to Chase Keys?",
     answer:
-      "I want to produce video projects at some point while remaining anonymous. I realized I was going to have to mask my appearance in a way that didn’t really work with the SteampunkLink name. SteampunkLink was just a name I used at a very specific time and it stuck, but I’ve never been all that into steampunk, nor did I want his pseudonym to be forever linked (ha) to a named video game character. The name now is a reference to a Nintendo character, but not actually the name of any specific character. I feel like I can do more with that.",
+      "I want to produce video projects at some point while remaining anonymous. I realized I was going to have to mask my appearance in a way that didn’t really work with the SteampunkLink name. SteampunkLink was just a name I used at a very specific time and it stuck, but I’ve never been all that into steampunk, nor did I want the pseudonym to be forever linked (ha) to a named video game character. The name now is a reference to a Nintendo character, but not actually the name of any specific character. I feel like I can do more with that.",
   },
   {
     question: "How can I contact you?",

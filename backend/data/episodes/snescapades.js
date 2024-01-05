@@ -12,6 +12,7 @@ const snescapadesEps = [
     image: "001_Cover.jpg",
     blog: "001_jurassic_park.md",
     games: [0, 1, 2],
+    isPublished: true,
   },
   {
     title: "Aladdin Edition",
@@ -24,6 +25,7 @@ const snescapadesEps = [
     image: "002_Cover.jpg",
     blog: "002_aladdin.md",
     games: [3, 4, 5],
+    isPublished: true,
   },
   {
     title: "Clock Tower Edition",
@@ -36,17 +38,20 @@ const snescapadesEps = [
     image: "003_Cover.jpg",
     blog: "003_clock_tower.md",
     games: [9],
+    isPublished: true,
   },
   {
     title: "Clay Fighter Edition",
     episode: 3,
-    length: "",
-    published: new Date(),
-    embedURL: "",
-    youtubeURL: "",
+    length: "1:02:50",
+    published: new Date(2024, monthEnum.jan, 4),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Clay-Fighter-Edition-e2e0j3q",
+    youtubeURL: "https://youtu.be/wNXP6QcbzKM?si=_TkcHxybePq0n9vR",
     image: "004_Cover.jpg",
-    blog: "",
+    blog: "004_clay_fighter",
     games: [6, 7, 8],
+    isPublished: true,
   },
 ];
 

@@ -5,7 +5,7 @@ const limit = 10;
 
 const formatEpisodes = (show, episodes, type, slug) => {
   let formattedEpisodes = [];
-  const filteredEpisodes = episodes.filter((ep) => !!ep.blog);
+  const filteredEpisodes = episodes.filter((ep) => ep.isPublished);
   filteredEpisodes.forEach((ep) => {
     if (ep.games && ep.games.length) {
       const games = ep.games.map((g) => ({

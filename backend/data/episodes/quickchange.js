@@ -10,6 +10,7 @@ const quickChangeEps = [
       "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Street-Fighter-The-Movie-ectgru",
     image: "qctc_001_Cover.jpg",
     blog: "qctc_001_street_fighter.md",
+    isPublished: true,
   },
   {
     title: "QCtC: Double Dragon: The Movie (1993)",
@@ -20,6 +21,7 @@ const quickChangeEps = [
       "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Quick-Change-the-Channel-Double-Dragon-en0ugp",
     image: "qctc_002_Cover.jpg",
     blog: "qctc_002_double_dragon.md",
+    isPublished: true,
   },
   {
     title: "QCtC: Mortal Kombat: The Movie (1995)",
@@ -30,6 +32,7 @@ const quickChangeEps = [
       "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Mortal-Kombat-The-Movie-1995-e1as7qn",
     image: "qctc_003_Cover.jpg",
     blog: "qctc_003_mortal_kombat.md",
+    isPublished: true,
   },
   {
     title: "QCtC: Five Nights at Freddy's: The Movie (2023)",
@@ -40,6 +43,7 @@ const quickChangeEps = [
       "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Quick--Change-the-Channel---Five-Nights-at-Freddys-e2cas7s",
     image: "qctc_004_Cover.jpg",
     blog: "qctc_004_five_nights.md",
+    isPublished: true,
   },
 ];
 

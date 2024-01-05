@@ -13,9 +13,23 @@
       color: #888;
       pointer-events: none;
     }
+    a * {
+      pointer-events: none;
+    }
   }
 }
 
+.sidebar-label {
+  color: var(--snes-blue);
+  height: 10px;
+}
+
+.social-groups {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .social-box {
   display: flex;
   flex-direction: row;
