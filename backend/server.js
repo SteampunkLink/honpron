@@ -18,10 +18,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.send("Server is Running");
-});
-
 app.use("/api/entries", entryRoutes);
 app.use("/api/ranks", rankRoutes);
 app.use("/api/faqs", faqRoutes);
@@ -31,6 +27,17 @@ app.use("/api/friends", friendRoutes);
 const __dirname = path.resolve();
 app.use("/images", express.static(path.join(__dirname, "/images")));
 app.use("/markdown", express.static(path.join(__dirname, "/markdown")));
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/frontend/dist")));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("Server is Running");
+  });
+}
 
 app.use(errorHandler);
 
