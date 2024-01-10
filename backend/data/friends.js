@@ -21,7 +21,7 @@ const allFriends = [
     name: "Lore Together",
     url: "https://bossrush.net/loretogether/",
     description:
-      "Husband and wife team Mystic and Saphy do deep dives into the lore of classic video game series. They also host live streams on YouTube.",
+      "Mystic and Saphy do deep dives into the lore of classic video game series. They also host live streams on YouTube.",
   },
   {
     name: "Grand Rapidians Play Games",
@@ -30,7 +30,7 @@ const allFriends = [
       "Willie and Ginger want to hang out with fun guests, talk about beverages, video games, and real life experience points.",
   },
   {
-    name: "Gateleepers",
+    name: "Gateleapers",
     url: "https://linktr.ee/Gateleapers",
     description:
       "The Gateleapers have their guests compete in trivia contests about various fandoms to show you how much fun getting into a new fandom can be.",
