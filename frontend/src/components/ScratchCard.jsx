@@ -9,17 +9,11 @@ const ScratchCard = ({ id }) => {
   const { data: cardData, isLoading, error } = useGetCardQuery(id);
   const [tokens, setTokens] = useState([]);
   const [isActive, setIsActive] = useState(false);
-  const [cardBack, setCardBack] = useState(
-    "images/scratchcards/mario/screen0.jpg"
-  );
 
   const flipCard = () => {
     setIsActive(true);
     setTimeout(() => {
       setIsActive(false);
-      setCardBack(
-        `images/scratchcards/${cardData.directory}/screen${cardData.screen}.jpg`
-      );
     }, 300);
   };
 
@@ -52,15 +46,10 @@ const ScratchCard = ({ id }) => {
                     index={idx}
                     locations={cardData.locations}
                     token={tokens[idx]}
+                    resetScratch={isActive}
                   />
                 ))}
             </div>
-
-            {/* <div
-              id="cardAreaBack"
-              className={`back ${cardData.type}`}
-              style={{ backgroundImage: cardBack }}
-            ></div> */}
           </div>
         </div>
       )}

@@ -49,8 +49,32 @@ const snescapadesEps = [
       "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Clay-Fighter-Edition-e2e0j3q",
     youtubeURL: "https://youtu.be/wNXP6QcbzKM?si=_TkcHxybePq0n9vR",
     image: "004_Cover.jpg",
-    blog: "004_clay_fighter",
+    blog: "004_clay_fighter.md",
     games: [6, 7, 8],
+    isPublished: true,
+  },
+  {
+    title: "The Wrap: November 1993",
+    episode: 4,
+    length: "1:03:29",
+    published: new Date(2024, monthEnum.jan, 11),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/The-Wrap-November-93-e2eap44",
+    youtubeURL: "https://youtu.be/fezm_an3OQU?si=Y-0QgIlN2iZdAaXE",
+    image: "005_Cover.jpg",
+    blog: "005_wrap_nov_93.md",
+    isPublished: true,
+  },
+  {
+    title: "Playing with Power: August 1991",
+    episode: 5,
+    length: "1:09:40",
+    published: new Date(2024, monthEnum.jan, 19),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/TPlaying-with-Power-August-1991-e2em5cd",
+    youtubeURL: "https://youtu.be/Ue1u3YG2L3g?si=tmu59oJeMIvYQAdw",
+    image: "006_Cover.jpg",
+    blog: "006_pwp_aug_91.md",
     isPublished: true,
   },
 ];

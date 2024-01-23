@@ -26,3 +26,16 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .header {
+    display: initial;
+    border-bottom: var(--accent-color) 3px solid;
+    text-align: center;
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

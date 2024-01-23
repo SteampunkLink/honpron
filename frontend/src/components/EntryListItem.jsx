@@ -40,7 +40,7 @@ const EntryListItem = ({ entry }) => {
             </>
           ) : null}
           {entry.youtubeURL && (
-            <a href={entry.youtubeURL}>
+            <a href={entry.youtubeURL} target="_blank">
               <div className="hp-btn single-link-btn youtube-btn">
                 Watch/Comment on YouTube
               </div>

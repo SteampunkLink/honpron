@@ -21,3 +21,27 @@ a {
   margin: 0 auto;
   width: 25%;
 }
+
+@media (max-width: 900px) {
+  .site-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .main-container {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .sidebar-container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+  }
+}
+
+@media (max-width: 750px) {
+  .sidebar-container {
+    flex-direction: column;
+  }
+}
