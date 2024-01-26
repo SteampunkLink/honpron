@@ -62,6 +62,18 @@ const allGames = [
     mobyURL: "",
     rank: "A",
   },
+  {
+    title: "Super Mario World",
+    manualURL: "https://archive.org/details/super-mario-world-usa",
+    mobyURL: "https://www.mobygames.com/game/6591/super-mario-world/",
+    rank: "A",
+  },
+  {
+    title: "F-Zero",
+    manualURL: "https://archive.org/details/f-zero-usa",
+    mobyURL: "https://www.mobygames.com/game/6630/f-zero/",
+    rank: "A",
+  },
 ];
 
 export default allGames;

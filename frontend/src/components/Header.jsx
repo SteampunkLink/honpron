@@ -5,7 +5,7 @@ const Header = () => {
     <nav className="header">
       <div className="header-inner">
         <Link to="/">
-          <div className="header_left">SNEScapades.com</div>
+          <div className="header_left">SNEScapades.show</div>
         </Link>
         <div className="header_right">Home of the SNEScapades Podcast!</div>
       </div>

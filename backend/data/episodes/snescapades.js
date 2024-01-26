@@ -77,6 +77,19 @@ const snescapadesEps = [
     blog: "006_pwp_aug_91.md",
     isPublished: true,
   },
+  {
+    title: "Super Mario World Edition",
+    episode: 6,
+    length: "40:48",
+    published: new Date(2024, monthEnum.jan, 25),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Super-Mario-World-Edition-e2ev63m",
+    youtubeURL: "https://youtu.be/lNXWPwhixUI",
+    image: "007_Cover.jpg",
+    blog: "007_super_mario_world.md",
+    games: [10, 11],
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;
