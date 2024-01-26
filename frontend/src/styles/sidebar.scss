@@ -1,5 +1,8 @@
 .sidebar-area {
   margin-bottom: 10px;
+  .display-box {
+    height: 100%;
+  }
   ul {
     li {
       color: var(--accent-color);
