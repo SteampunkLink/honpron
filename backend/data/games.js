@@ -74,6 +74,24 @@ const allGames = [
     mobyURL: "https://www.mobygames.com/game/6630/f-zero/",
     rank: "A",
   },
+  {
+    title: "Gradius III",
+    manualURL: "https://archive.org/details/gradius-iii-usa",
+    mobyURL: "https://www.mobygames.com/game/12034/gradius-iii/",
+    rank: "C",
+  },
+  {
+    title: "Pilotwings",
+    manualURL: "https://archive.org/details/pilotwings-usa",
+    mobyURL: "https://www.mobygames.com/game/6632/pilotwings/",
+    rank: "B",
+  },
+  {
+    title: "SimCity",
+    manualURL: "https://archive.org/details/sim-city-usa",
+    mobyURL: "https://www.mobygames.com/game/848/simcity/",
+    rank: "A",
+  },
 ];
 
 export default allGames;

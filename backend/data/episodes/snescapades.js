@@ -90,6 +90,19 @@ const snescapadesEps = [
     games: [10, 11],
     isPublished: true,
   },
+  {
+    title: "SimCity Edition",
+    episode: 7,
+    length: "55:39",
+    published: new Date(2024, monthEnum.feb, 1),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/SimCity-Edition-e2f8q9p",
+    youtubeURL: "https://youtu.be/HkZefzU1s0I",
+    image: "008_Cover.jpg",
+    blog: "008_simcity.md",
+    games: [12, 13, 14],
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;
