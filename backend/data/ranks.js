@@ -68,7 +68,6 @@ const ranks = {
     "Super Double Dragon",
     "Push-Over",
     "Rocky Rodent",
-    "Gradius III",
     "Plok!",
     "Super Baseball Sim 1.000",
     "Super Turrican",
@@ -80,6 +79,7 @@ const ranks = {
     "Troddlers",
     "Robocop Vs. Terminator",
     "Ranma 1/2 Hard Battle",
+    "Pilotwings",
   ],
   C: [
     "Ys III: Wanderers from Ys",
@@ -99,7 +99,6 @@ const ranks = {
     "Desert Strike: Return to the Gulf",
     "Final Fantasy Mystic Quest",
     "Final Fight",
-    "Pilotwings",
     "Krusty’s Super Fun House",
     "Harley's Humongous Adventure",
     "Spiderman and the X-Men: Arcade’s Revenge",
@@ -132,6 +131,7 @@ const ranks = {
     "Jurassic Park",
     "Total Carnage",
     "Out to Lunch",
+    "Gradius III",
   ],
   D: [
     "Bubsy: Claws Encounter of the Furred Kind",
