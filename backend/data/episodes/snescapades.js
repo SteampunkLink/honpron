@@ -103,6 +103,18 @@ const snescapadesEps = [
     games: [12, 13, 14],
     isPublished: true,
   },
+  {
+    title: "Playing with Power: December 1993",
+    episode: 8,
+    length: "1:27:14",
+    published: new Date(2024, monthEnum.feb, 8),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Playing-with-Power-December-93-e2fhsl2",
+    youtubeURL: "https://youtu.be/IlzLSSCJE3U",
+    image: "009_Cover.jpg",
+    blog: "009_pwp_dec_93.md",
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;
