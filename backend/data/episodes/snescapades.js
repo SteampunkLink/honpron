@@ -125,6 +125,7 @@ const snescapadesEps = [
     youtubeURL: "https://youtu.be/hVj05CX_LQ8",
     image: "010_Cover.jpg",
     blog: "010_battle_cars.md",
+    games: [15, 16, 17],
     isPublished: true,
   },
 ];

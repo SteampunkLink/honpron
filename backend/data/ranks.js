@@ -132,6 +132,7 @@ const ranks = {
     "Total Carnage",
     "Out to Lunch",
     "Gradius III",
+    "Battle Cars",
   ],
   D: [
     "Bubsy: Claws Encounter of the Furred Kind",
@@ -197,6 +198,8 @@ const ranks = {
     "True Golf Classics: Wicked 18",
     "Pink Goes to Hollywood",
     "Clay Fighter",
+    "Super Chase H.Q.",
+    "Super Nova",
   ],
   F: [
     "Race Drivin’",

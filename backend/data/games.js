@@ -92,6 +92,25 @@ const allGames = [
     mobyURL: "https://www.mobygames.com/game/848/simcity/",
     rank: "A",
   },
+  {
+    title: "Battle Cars",
+    manualURL: "https://archive.org/details/battle-cars-usa",
+    mobyURL: "https://www.mobygames.com/game/32593/battle-cars/",
+    rank: "C",
+  },
+  {
+    title: "Super Chase H.Q.",
+    manualURL: "https://archive.org/details/super-chase-h.-q-pal",
+    mobyURL:
+      "https://www.mobygames.com/game/13230/super-chase-criminal-termination/",
+    rank: "D",
+  },
+  {
+    title: "Super Nova",
+    manualURL: "https://archive.org/details/super-nova-usa",
+    mobyURL: "https://www.mobygames.com/game/10513/super-nova/",
+    rank: "D",
+  },
 ];
 
 export default allGames;
