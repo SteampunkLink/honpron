@@ -115,6 +115,18 @@ const snescapadesEps = [
     blog: "009_pwp_dec_93.md",
     isPublished: true,
   },
+  {
+    title: "Battle Cars Edition",
+    episode: 9,
+    length: "58:17",
+    published: new Date(2024, monthEnum.feb, 18),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Battle-Cars-Edition-e2g0ruj",
+    youtubeURL: "https://youtu.be/hVj05CX_LQ8",
+    image: "010_Cover.jpg",
+    blog: "010_battle_cars.md",
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;
