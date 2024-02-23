@@ -80,6 +80,7 @@ const ranks = {
     "Robocop Vs. Terminator",
     "Ranma 1/2 Hard Battle",
     "Pilotwings",
+    "Inspector Gadget",
   ],
   C: [
     "Ys III: Wanderers from Ys",
@@ -255,6 +256,8 @@ const ranks = {
     "The Terminator",
     "Chuck Rock",
     "Bram Stoker's Dracula",
+    "The Adventures of Dr. Franken",
+    "Jim Power: Lost Dimension in 3D",
   ],
   U: [
     "Miracle Piano Teacher",

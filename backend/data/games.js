@@ -111,6 +111,27 @@ const allGames = [
     mobyURL: "https://www.mobygames.com/game/10513/super-nova/",
     rank: "D",
   },
+  {
+    title: "The Adventures of Dr. Franken",
+    manualURL: "https://archive.org/details/adventures-of-dr-franken-the-usa",
+    mobyURL:
+      "https://www.mobygames.com/game/9328/the-adventures-of-dr-franken/",
+    rank: "F",
+  },
+  {
+    title: "Jim Power: Lost Dimension in 3D",
+    manualURL:
+      "https://archive.org/details/jim-power-the-lost-dimension-in-3-d-usa/mode/2up",
+    mobyURL:
+      "https://www.mobygames.com/game/31047/jim-power-the-lost-dimension-in-3d/",
+    rank: "F",
+  },
+  {
+    title: "Inspector Gadget",
+    manualURL: "https://archive.org/details/inspector-gadget-usa",
+    mobyURL: "https://www.mobygames.com/game/21517/inspector-gadget/",
+    rank: "B",
+  },
 ];
 
 export default allGames;

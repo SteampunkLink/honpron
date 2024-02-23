@@ -128,6 +128,19 @@ const snescapadesEps = [
     games: [15, 16, 17],
     isPublished: true,
   },
+  {
+    title: "Inspector Gadget Edition",
+    episode: 10,
+    length: "49:35",
+    published: new Date(2024, monthEnum.feb, 22),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Inspector-Gadget-Edition-e2g6s23",
+    youtubeURL: "https://youtu.be/FdUfuxUBK-E",
+    image: "011_Cover.jpg",
+    blog: "011_inspector_gadget.md",
+    games: [18, 19, 20],
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;
