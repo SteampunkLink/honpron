@@ -37,6 +37,8 @@ const ranks = {
     "Disney's Aladdin",
     "Super Mario World",
     "Clock Tower",
+    "TMNT: Tournament Fighters",
+    "Art of Fighting",
   ],
   B: [
     "BlaZeon The Bio-Cyborg Challenge",
@@ -201,6 +203,7 @@ const ranks = {
     "Clay Fighter",
     "Super Chase H.Q.",
     "Super Nova",
+    "Battle Blaze",
   ],
   F: [
     "Race Drivin’",

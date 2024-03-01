@@ -141,6 +141,19 @@ const snescapadesEps = [
     games: [18, 19, 20],
     isPublished: true,
   },
+  {
+    title: "TMNT: Tournament Fighters Edition",
+    episode: 11,
+    length: "51:15",
+    published: new Date(2024, monthEnum.feb, 29),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/TMNT-Tournament-Fighters-Edition-e2gg5rt",
+    youtubeURL: "https://youtu.be/cUxfjpk_bhM",
+    image: "012_Cover.jpg",
+    blog: "012_tmnt_tournament_fighters.md",
+    games: [21, 22, 23],
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;

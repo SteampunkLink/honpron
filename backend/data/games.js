@@ -132,6 +132,26 @@ const allGames = [
     mobyURL: "https://www.mobygames.com/game/21517/inspector-gadget/",
     rank: "B",
   },
+  {
+    title: "Art of Fighting",
+    manualURL: "https://archive.org/details/art-of-fighting-usa",
+    mobyURL: "https://www.mobygames.com/game/13035/art-of-fighting/",
+    rank: "A",
+  },
+  {
+    title: "Battle Blaze",
+    manualURL: "https://archive.org/details/battle-blaze-usa",
+    mobyURL: "https://www.mobygames.com/game/27479/battle-blaze/",
+    rank: "D",
+  },
+  {
+    title: "TMNT: Tournament Fighters",
+    manualURL:
+      "https://archive.org/details/teenage-mutant-ninja-turtles-tournament-fighters-usa",
+    mobyURL:
+      "https://www.mobygames.com/game/31025/teenage-mutant-ninja-turtles-tournament-fighters/",
+    rank: "A",
+  },
 ];
 
 export default allGames;
