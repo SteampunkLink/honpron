@@ -83,6 +83,7 @@ const ranks = {
     "Ranma 1/2 Hard Battle",
     "Pilotwings",
     "Inspector Gadget",
+    "Lufia & the Fortress of Doom",
   ],
   C: [
     "Ys III: Wanderers from Ys",
@@ -136,6 +137,8 @@ const ranks = {
     "Out to Lunch",
     "Gradius III",
     "Battle Cars",
+    "Metal Marines",
+    "Soldiers of Fortune",
   ],
   D: [
     "Bubsy: Claws Encounter of the Furred Kind",

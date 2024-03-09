@@ -154,6 +154,19 @@ const snescapadesEps = [
     games: [21, 22, 23],
     isPublished: true,
   },
+  {
+    title: "Lufia and the Fortress of Doom Edition",
+    episode: 12,
+    length: "50:41",
+    published: new Date(2024, monthEnum.mar, 8),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Lufia--the-Fortress-of-Doom-Edition-e2gr8u9",
+    youtubeURL: "https://youtu.be/J--FjnlkqJI",
+    image: "013_Cover.jpg",
+    blog: "013_lufia.md",
+    games: [24, 25, 26],
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;

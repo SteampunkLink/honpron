@@ -152,6 +152,24 @@ const allGames = [
       "https://www.mobygames.com/game/31025/teenage-mutant-ninja-turtles-tournament-fighters/",
     rank: "A",
   },
+  {
+    title: "Metal Marines",
+    manualURL: "https://archive.org/details/metal-marines-pal",
+    mobyURL: "https://www.mobygames.com/game/4620/metal-marines/",
+    rank: "C",
+  },
+  {
+    title: "Soldiers of Fortune",
+    manualURL: "https://archive.org/details/soldiers-of-fortune-usa",
+    mobyURL: "https://www.mobygames.com/game/933/soldiers-of-fortune/",
+    rank: "C",
+  },
+  {
+    title: "Lufia and the Fortress of Doom",
+    manualURL: "https://archive.org/details/lufia-the-fortress-of-doom-usa",
+    mobyURL: "https://www.mobygames.com/game/9980/lufia-the-fortress-of-doom/",
+    rank: "B",
+  },
 ];
 
 export default allGames;
