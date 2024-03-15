@@ -167,6 +167,18 @@ const snescapadesEps = [
     games: [24, 25, 26],
     isPublished: true,
   },
+  {
+    title: "The Wrap: December 1993",
+    episode: 13,
+    length: "1:05:34",
+    published: new Date(2024, monthEnum.mar, 14),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/The-Wrap-December-93-e2h4144",
+    youtubeURL: "https://youtu.be/9OnfPLGSUsY",
+    image: "014_Cover.jpg",
+    blog: "014_wrap_dec_93.md",
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;

@@ -139,6 +139,8 @@ const ranks = {
     "Battle Cars",
     "Metal Marines",
     "Soldiers of Fortune",
+    "Side Pocket",
+    "Barbie Super Model",
   ],
   D: [
     "Bubsy: Claws Encounter of the Furred Kind",
@@ -207,6 +209,8 @@ const ranks = {
     "Super Chase H.Q.",
     "Super Nova",
     "Battle Blaze",
+    "Dig & Spike Volleyball",
+    "Beethoven: The Ultimate Canine Caper",
   ],
   F: [
     "Race Drivin’",
@@ -264,6 +268,8 @@ const ranks = {
     "Bram Stoker's Dracula",
     "The Adventures of Dr. Franken",
     "Jim Power: Lost Dimension in 3D",
+    "Dennis the Menace",
+    "Mario's Time Machine",
   ],
   U: [
     "Miracle Piano Teacher",
@@ -280,6 +286,12 @@ const ranks = {
     "Redline F-1 Racer",
     "Romance of the Three Kingdoms II",
     "Utopia: Creation of a Nation",
+    "World Soccer 94",
+    "F1 Pole Position",
+    "Nobunaga's Ambition",
+    "Romance of the Three Kingdoms III",
+    "Genghis Khan II: Clan of the Grey Wolf",
+    "Metal Combat: Falcon's Revenge",
   ],
 };
 
