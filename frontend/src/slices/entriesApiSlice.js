@@ -25,7 +25,7 @@ export const entriesApiSlice = apiSlice.injectEndpoints({
     }),
     getOneEntry: builder.query({
       query: (ep) => ({
-        url: `${ENTRIES_URL}/episode/${ep.show}/${ep.epNum}`,
+        url: `${ENTRIES_URL}/episode/${ep.show}/${ep.epNum - 1}`,
       }),
       keepUnusedDataFor: 5,
     }),

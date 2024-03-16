@@ -25,7 +25,7 @@ const EntryListItem = ({ entry }) => {
       </Link>
       <div className="entry-list-item_content">
         <div className="entry-list-item_img">
-          <img src={`/images/${entry.image}`} />
+          <img src={`/images/${entry.image}`} alt={entry.altText} />
         </div>
         <div className="entry-list-item_excerpt">
           <PodcastDisplay source={entry.embedURL} />
