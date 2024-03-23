@@ -234,6 +234,19 @@ const snescapadesEps = [
     altText: theWrapAlt("14th", "December 1993"),
     isPublished: true,
   },
+  {
+    title: "Playing with Power: September 1991 (Part 1)",
+    episode: 15,
+    length: "57:52",
+    published: new Date(2024, monthEnum.mar, 22),
+    embedURL:
+      "https://podcasters.spotify.com/pod/show/honest-piranha/embed/episodes/Playing-with-Power-September-1991-Part-1-e2hesji",
+    youtubeURL: "https://youtu.be/pWp5DQiwRgo",
+    image: "015_Cover.jpg",
+    blog: "015_pwp_sept_91_1.md",
+    altText: playingWithPowerAlt(15, "September 1991"),
+    isPublished: true,
+  },
 ];
 
 export default snescapadesEps;
