@@ -84,12 +84,12 @@ const ranks = {
     "Pilotwings",
     "Inspector Gadget",
     "Lufia & the Fortress of Doom",
+    "Super R-Type",
   ],
   C: [
     "Ys III: Wanderers from Ys",
     "Super Buster Bros.",
     "Joe & Mac",
-    "Super R-Type",
     "Magic Sword",
     "Dinocity",
     "Super Bomberman",

@@ -1,8 +1,8 @@
 const DateDisplay = ({ date }) => {
   return (
     <p>
-      {new Date(date).getMonth() + 1}/{new Date(date).getDate()}/
-      {new Date(date).getFullYear()}
+      {new Date(date).getUTCMonth() + 1}/{new Date(date).getUTCDate()}/
+      {new Date(date).getUTCFullYear()}
     </p>
   );
 };

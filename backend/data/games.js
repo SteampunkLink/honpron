@@ -170,6 +170,24 @@ const allGames = [
     mobyURL: "https://www.mobygames.com/game/9980/lufia-the-fortress-of-doom/",
     rank: "B",
   },
+  {
+    title: "Super R-Type",
+    manualURL: "https://archive.org/details/super-r-type-usa",
+    mobyURL: "https://www.mobygames.com/game/7148/super-r-type/",
+    rank: "B",
+  },
+  {
+    title: "Drakkhen",
+    manualURL: "https://archive.org/details/drakkhen-usa/mode/2up",
+    mobyURL: "https://www.mobygames.com/game/1969/drakkhen/",
+    rank: "D",
+  },
+  {
+    title: "UN Squadron",
+    manualURL: "https://archive.org/details/u.-n.-squadron-usa/mode/2up",
+    mobyURL: "https://www.mobygames.com/game/8061/un-squadron/",
+    rank: "A",
+  },
 ];
 
 export default allGames;
